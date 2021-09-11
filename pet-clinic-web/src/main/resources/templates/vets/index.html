@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" th:replace="~{fragments/layout :: layout (~{::body},'vets')}" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8" xmlns:th="http://www.thymeleaf.org">
+    <meta charset="UTF-8">
     <title>List of Vets</title>
 </head>
 <body>
@@ -9,7 +9,7 @@
 <!--/*@thymesVar id="vet" type="xj.springframework.sfgpetclinic.model.Vet"*/-->
 <h1 th:text="'List of Vets'"> List of Vets...</h1>
 
-<table>
+<table class="table table-striped">
     <thead>
     <tr>
         <th>Id</th>
