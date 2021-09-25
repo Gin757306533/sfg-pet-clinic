@@ -1,5 +1,7 @@
 package xj.springframework.sfgpetclinic.services.springdatajpa;
 
+import org.springframework.context.annotation.Profile;
+import org.springframework.stereotype.Service;
 import xj.springframework.sfgpetclinic.model.Visit;
 import xj.springframework.sfgpetclinic.repositories.VisitRepository;
 import xj.springframework.sfgpetclinic.services.VisitService;
@@ -7,6 +9,8 @@ import xj.springframework.sfgpetclinic.services.VisitService;
 import java.util.HashSet;
 import java.util.Set;
 
+@Service
+@Profile("springdatajpa")
 public class VisitSDJpaService implements VisitService {
 
     private final VisitRepository visitRepository;
