@@ -15,9 +15,9 @@ import java.util.Set;
 
 @Getter
 @Setter
-@Builder
+// todo: figure it out
+//@Builder  // if added, will make test failed
 @NoArgsConstructor
-//@AllArgsConstructor
 @Entity
 @Table(name = "owners")
 public class Owner extends Person {
